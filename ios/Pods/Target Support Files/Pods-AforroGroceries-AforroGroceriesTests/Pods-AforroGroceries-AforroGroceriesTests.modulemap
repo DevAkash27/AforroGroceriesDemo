@@ -1,0 +1,6 @@
+module Pods_AforroGroceries_AforroGroceriesTests {
+  umbrella header "Pods-AforroGroceries-AforroGroceriesTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
