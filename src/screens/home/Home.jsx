@@ -37,6 +37,7 @@ const Home = ({navigation}) => {
       <Image source={{uri: item?.image}} style={styles.image} />
       <Text style={styles.name}>{item?.name}</Text>
       <Text style={styles.price}>{`${'$' + item?.price?.toFixed(2)}`}</Text>
+
       <TouchableOpacity
         onPress={() => addToCart(item)}
         style={styles.addToCart}>

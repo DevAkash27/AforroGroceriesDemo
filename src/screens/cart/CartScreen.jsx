@@ -37,6 +37,13 @@ const CartScreen = ({navigation}) => {
   return (
     <View style={{flex: 1, paddingVertical: '20%', paddingHorizontal: '6%'}}>
       <Text style={{fontSize: 24, fontWeight: '600'}}>Your Cart </Text>
+      {products?.length === 0 && (
+        <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+          <Text style={{fontSize: 24, fontWeight: '600'}}>
+            Your Cart is Empty
+          </Text>
+        </View>
+      )}
       <FlatList
         data={products}
         style={{paddingVertical: '10%'}}
