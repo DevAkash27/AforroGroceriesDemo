@@ -18,11 +18,6 @@ const MockApiList = ({navigation}) => {
         <Text style={styles.title}>{`${'User:'}${item?.userId}`}</Text>
         <Text style={styles.title}>{item?.title}</Text>
         <Text style={styles.body}>{item?.body}</Text>
-        {/* <TouchableOpacity
-          onPress={() => addToCart(item)}
-          style={styles.addToCart}>
-          <Text style={{color: 'white'}}>Add to Cart</Text>
-        </TouchableOpacity> */}
       </TouchableOpacity>
     );
   };
